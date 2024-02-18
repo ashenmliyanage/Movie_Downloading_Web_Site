@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    position: absolute;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 131vh;
+}
+
+header nav ul li{
+    margin:30px 50px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #FFFF;
+    opacity: 0.7;
+}
+
+.HomePage{
+    position: relative;
+    height: 100vh;
+    background-image: url('https://images7.alphacoders.com/131/1319721.jpeg');
+    background-position: center;
+    filter: blur(0px);
+    background-size: cover;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.HomePage .main{
+    position: relative;
+    top: -4vh;
+    animation: slideRightToLeft 3s linear infinite;
+}
+
+.HomePage .mLable{
+    position: absolute;
+    border: 1px solid transparent;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #ffffff41;
+    width: 439px;
+    height: 30px;
+    top: 32vh;
+    left: 24vh;
+}
+
+.HomePage .mLable h3{
+    position: absolute;
+    top: -14px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #FFFF;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.HomePage .mLable button{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    background-color: #FB1351;
+    border: none;
+    border-radius: 50px;
+    margin-right: 10px;
+    color: #FFFF;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.HomePage .dis{
+    position: absolute;
+    left: 24vh;
+    top: 42vh;
+}
+
+.HomePage .dis h1{
+    font-size: 159px;
+    color: #FFFF;
+    letter-spacing: 5px;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.HomePage .dis ul{
+    display: flex;
+    list-style: none;
+    font-size: 25px;
+    color: #FFFF;
+    margin: 0px;
+    padding: 0%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.HomePage .dis ul li{
+    margin: 0 20px;
+    letter-spacing: 2px;
+}
+.HomePage .dis ul #pg{
+    margin-left: 0;
+    font-size: 25px;
+    border: 1px solid #FFFF;
+    padding: 3px;
+    color: #FFFF;
+    letter-spacing: 2px;
+}
+
+.HomePage .dis ul li i{
+    font-size: 2    5px;
+    color: #bbff00;
+    margin-right: 10px;
+}
+
+.HomePage .dis p{
+    font-size: 18px;
+    color: #ffffff6b;
+    letter-spacing: 2px;
+    line-height: 163%;
+    margin-top: 4vh;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.HomePage .dis button{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    background-color: #FB1351;
+    border: none;
+    color: #FFFF;
+    padding: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 4vh;
+}
+
+.HomePage .dis button i{
+    margin-right: 15px;
+}
+
+.HomePage .videos{
+    position: relative;
+    top: 42vh;
+    left: 110vh;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes fadeEffect {
+    0% { opacity: 0; }
+    25% { opacity: 1; }
+    75% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@keyframes slideRightToLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    25% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    75% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}
