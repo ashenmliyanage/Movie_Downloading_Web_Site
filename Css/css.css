@@ -7,7 +7,9 @@ body{
 }
 
 header{
-    position: absolute;
+    display: flex;
+    position: fixed;
+    width: 100%;
 }
 
 header nav ul{
@@ -17,7 +19,7 @@ header nav ul{
     margin: 0;
     padding: 0;
     position: relative;
-    left: 131vh;
+    left: 130vh;
 }
 
 header nav ul li{
@@ -205,4 +207,49 @@ header nav ul li a{
 
 .HomePage .main2 h1{
     font-size: 140px;
+}
+.movies{
+    margin: 0;
+    padding: 0;
+    background-color: #FFFF;
+    background-size: cover;
+}
+
+.movies img{
+    height: 429px;
+    width: 314px;
+}
+.movies table{
+    margin: 160px;
+    margin-top: 0;
+    padding-top: 160px;
+}
+.movies td{
+    text-align: center;
+    padding: 40px;
+}
+.movies td h2{
+    color: #000;
+}
+.movies td h3{
+    color: #7A7A7A;
+}
+
+.movies td span{
+    padding-left: 10px;
+    color: #B3133C;
+}
+
+.movies td a{
+    text-decoration: none;
+}
+
+td:hover {
+    transform: scale(1.1); /* Increase the size by 10% */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+header.scrolled {
+    background-color: #000;
+    transition: background-color 0.5s;
 }
